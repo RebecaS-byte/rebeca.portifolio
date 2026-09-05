@@ -1,0 +1,454 @@
+/* =========================
+   CONFIGURAÇÃO GERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #09070d;
+
+    color: #e8def5;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+header {
+    background-color: #0d0a12;
+
+    border-bottom: 2px solid #6f2dbd;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+.navbar {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.navbar h1 {
+    color: #c58aff;
+
+    font-size: 24px;
+
+    text-shadow:
+        0 0 10px #8a2be2;
+}
+
+.menu {
+    list-style: none;
+
+    display: flex;
+
+    gap: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+
+    color: #e8def5;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #c58aff;
+
+    text-shadow:
+        0 0 8px #8a2be2;
+}
+
+
+/* =========================
+   SAKURA
+========================= */
+
+.sakura {
+    width: 100%;
+
+    height: 360px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    border-bottom: 2px solid #6f2dbd;
+
+    box-shadow:
+        0 5px 30px rgba(126, 34, 206, 0.25);
+}
+
+.sakura img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* =========================
+   INÍCIO
+========================= */
+
+.inicio {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 100px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+.texto-inicio {
+    max-width: 600px;
+}
+
+.subtitulo {
+    color: #c58aff;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 10px rgba(168, 85, 247, 0.6);
+}
+
+.texto-inicio h3 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.texto-inicio h3 span {
+    color: #a855f7;
+
+    text-shadow:
+        0 0 10px rgba(168, 85, 247, 0.6);
+}
+
+.texto-inicio p {
+    font-size: 17px;
+
+    margin-bottom: 25px;
+
+    color: #d5c9df;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: inline-block;
+
+    background-color: #6f2dbd;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border: 1px solid #a855f7;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #8b3fd1;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 10px #8a2be2,
+        0 0 25px rgba(138, 43, 226, 0.5);
+}
+
+
+/* =========================
+   FOTO DA REBECA
+========================= */
+
+.foto {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.moldura {
+    width: 250px;
+
+    height: 250px;
+
+    padding: 10px;
+
+    background-color: #f5f5f5;
+
+    border: 3px solid #a855f7;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 10px #7e22ce,
+        0 0 25px rgba(126, 34, 206, 0.5);
+}
+
+.moldura img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.secao {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+}
+
+.secao > h1 {
+    color: #c58aff;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background-color: #120e18;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #4c2670;
+
+    border-left: 3px solid #8b3fd1;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.4),
+        0 0 15px rgba(126, 34, 206, 0.15);
+
+    margin-top: 20px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card h1,
+.card h2 {
+    color: #c58aff;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 8px rgba(168, 85, 247, 0.5);
+}
+
+
+/* =========================
+   CURSOS
+========================= */
+
+#cursos span {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 5px 15px;
+
+    background-color: #21132f;
+
+    color: #c58aff;
+
+    border: 1px solid #7136a3;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.links {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+
+    background-color: #21132f;
+
+    color: #c58aff;
+
+    border: 1px solid #7136a3;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background-color: #6f2dbd;
+
+    color: white;
+
+    box-shadow:
+        0 0 10px #8a2be2;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #0d0a12;
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #a995b8;
+
+    border-top: 1px solid #3b1d50;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    /* Sakura no celular */
+
+    .sakura {
+        height: 250px;
+    }
+
+    .sakura img {
+        object-position: center;
+    }
+
+    /* Início */
+
+    .inicio {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 70px 20px;
+
+        gap: 50px;
+    }
+
+    .texto-inicio {
+        max-width: 100%;
+    }
+
+    /* Foto */
+
+    .moldura {
+        width: 230px;
+
+        height: 230px;
+    }
+
+    /* Links */
+
+    .links {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+}
